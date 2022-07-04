@@ -16,6 +16,7 @@ struct SaleRequest: Content {
     var credit_card: String
 }
 
+//add github
 /*
  {
      "id_user": 123,
