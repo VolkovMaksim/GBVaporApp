@@ -8,8 +8,8 @@ public func configure(_ app: Application) throws {
     // app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
 
 //    app.http.server.configuration.hostname = "127.0.0.1"
-    app.http.server.configuration.hostname = "192.168.100.8"
-    app.http.server.configuration.port = 8084
+//    app.http.server.configuration.hostname = "192.168.100.8"
+//    app.http.server.configuration.port = 8084
     
     app.databases.use(.postgres(
         hostname: Environment.get("DATABASE_HOST") ?? "localhost",

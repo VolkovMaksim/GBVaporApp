@@ -1,8 +1,27 @@
 //
-//  File.swift
+//  SaleController.swift
 //  
 //
 //  Created by Maksim Volkov on 04.07.2022.
 //
 
-import Foundation
+import Vapor
+
+class SaleController {
+    func sale(_ req: Request) throws -> EventLoopFuture<SaleResponse> {
+        guard let body = try? req.content.decode(SaleRequest.self) else {
+            throw Abort(.badRequest)
+            
+        }
+
+        print(body)
+
+        let response = SaleResponse(
+            result: 1,
+            bank_message: "Оплата проведена успешно!",
+            error_message: nil
+        )
+
+        return req.eventLoop.future(response)
+    }
+}

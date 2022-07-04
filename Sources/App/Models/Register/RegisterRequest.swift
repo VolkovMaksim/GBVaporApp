@@ -16,3 +16,14 @@ struct RegisterRequest: Content {
     var credit_card: String
     var bio: String
 }
+/*
+ {
+     "id_user": 123,
+     "username": "admin",
+     "password": "1234Qwer",
+     "email": "admin@mail.ru",
+     "gender": "мужик",
+     "credit_card": "9321-8432-7543-6321"
+     "bio": "Live man"
+ }
+ */
