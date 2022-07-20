@@ -1,5 +1,5 @@
 //
-//  FeedbackDeleteRequest.swift
+//  ShortsFeedbackDeleteRequest.swift
 //  
 //
 //  Created by Maksim Volkov on 20.07.2022.
@@ -7,6 +7,6 @@
 
 import Vapor
 
-struct FeedbackDeleteRequest: Content {
+struct ShortsFeedbackDeleteRequest: Content {
     var numbOfFeed: Int
 }
